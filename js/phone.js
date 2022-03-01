@@ -7,14 +7,26 @@
  
 // clear data 
   searchField.value = '';
-
-// search function  
+if(searchText ==''){
+  alert('Please write somethings to show!!')
+}
+else{
+  // search function  
   const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`
   // console.log(url);
   fetch(url)
   .then(res => res.json())
   .then(result => displaySearchResult(result.data));
 }
+
+}
+// // search function  
+//   const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`
+//   // console.log(url);
+//   fetch(url)
+//   .then(res => res.json())
+//   .then(result => displaySearchResult(result.data));
+// }
 
 //data display result 
 
