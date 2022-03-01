@@ -86,7 +86,7 @@
   <div class="card-body border border-success p-4">
     <h3 class="card-title">Brand:${data.brand}</h3>
     <h4 class="card-title">Name:${data.name}</h4>
-    <h5 class="card-title">Release Date:${data.releaseDate}</h5>
+    <h5 class="card-title">Release Date:${data.releaseDate?data.releaseDate:'release date not found'}</h5>
     <p class="card-text">Storage:${data.mainFeatures.storage}</p>
     <p class="card-text">Display Size:${data.mainFeatures.displaySize}</p>
     <p class="card-text">Chipset:${data.mainFeatures.chipSet}</p>
