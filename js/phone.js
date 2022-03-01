@@ -100,8 +100,9 @@ else{
   const phoneDetails = document.getElementById('phone-details');
 
 // clear upper card 
-
   phoneDetails.textContent='';
+
+// details card 
   const div = document.createElement('div');
   div.classList.add('card');
   div.innerHTML = `
