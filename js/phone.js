@@ -87,10 +87,10 @@
     <h3 class="card-title">Brand:${data.brand}</h3>
     <h4 class="card-title">Name:${data.name}</h4>
     <h5 class="card-title">Release Date:${data.releaseDate?data.releaseDate:'release date not found'}</h5>
-    <p class="card-text">Storage:${data.mainFeatures.storage}</p>
-    <p class="card-text">Display Size:${data.mainFeatures.displaySize}</p>
-    <p class="card-text">Chipset:${data.mainFeatures.chipSet}</p>
-    <p class="card-text">Memory:${data.mainFeatures.memory}</p>
+    <p class="card-text">Storage:${data.mainFeatures.storage?data.mainFeatures.storage:'There is no information'}</p>
+    <p class="card-text">Display Size:${data.mainFeatures.displaySize?data.mainFeatures.displaySize:'There is no information'}</p>
+    <p class="card-text">Chipset:${data.mainFeatures.chipSet?data.mainFeatures.chipSet:'There is no information'}</p>
+    <p class="card-text">Memory:${data.mainFeatures.memory?data.mainFeatures.memory:'There is no information'}</p>
     <p class="card-text ">Sensors:${data.mainFeatures.sensors[0]}</p>
     <p class="card-text">WLAN:${data.others.WLAN}</p>
     <p class="card-text">Bluetooth:${data.others.Bluetooth}</p>
@@ -103,6 +103,7 @@
   </div> 
   </div>
   `;
+  
   phoneDetails.appendChild(div);
 
 
