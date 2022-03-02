@@ -4,7 +4,7 @@
   const searchField = document.getElementById('search-field');
   const searchText = searchField.value;
 
-  // console.log(searchText);
+ 
  
 // clear data 
   searchField.value = '';
@@ -14,7 +14,6 @@
   else{
   // search function  
   const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`
-  // console.log(url);
   fetch(url)
   .then(res => res.json())
   .then(result => displaySearchResult(result.data.slice(0,20)));
@@ -36,7 +35,6 @@
   else{
 // for loop 
   data.forEach(data => {
-    // console.log(data)
     const div = document.createElement('div');
     div.classList.add('col');
   
@@ -62,7 +60,6 @@
 //  loading details 
  
   const loadDataDetail = loadId => {
-  // console.log(loadId);
   const url = `https://openapi.programming-hero.com/api/phone/${loadId}`;
   fetch(url)
   .then(res => res.json())
@@ -71,7 +68,6 @@
 
 //card display details 
   const displayPhoneDetails = data => {
-  // console.log(data);
   const phoneDetails = document.getElementById('phone-details');
 
 // clear upper card 
